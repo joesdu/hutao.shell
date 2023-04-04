@@ -2,6 +2,7 @@
   "name": "hutao.shell",
   "version": "1.0.0-alpha",
   "packageManager": "yarn@3.5.0",
+  "main": "main.ts",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
