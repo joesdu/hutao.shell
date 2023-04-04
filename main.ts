@@ -6,11 +6,11 @@ function createWindow() {
     width: 800,
     height: 600,
     webPreferences: {
-      preload: path.join(__dirname, "preload.ts"),
+      preload: path.join(`${__dirname}\\public`, "preload.ts"),
     },
   });
 
-  win.loadFile("index.html");
+  win.loadFile(`${__dirname}\\public\\index.html`);
 }
 
 app.whenReady().then(() => {
