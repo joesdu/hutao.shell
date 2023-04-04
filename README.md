@@ -19,3 +19,9 @@ We have ATTEMPTED to convert your app to be in a format that electron-forge unde
 
 Thanks for using "electron-forge"!!!
 ```
+
+## 启动项目
+
+```shell
+yarn start
+```
