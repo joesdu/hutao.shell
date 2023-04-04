@@ -1,21 +1,21 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "importHelpers": true,
-    "jsx": "preserve",
-    "esModuleInterop": true,
-    "sourceMap": true,
-    "baseUrl": "./",
+    "target": "ES6",
+    "allowJs": true,
+    "module": "commonjs",
     "skipLibCheck": true,
-    "experimentalDecorators": true,
-    "strict": true,
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "outDir": "dist",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true,
+    "jsx": "react-jsx",
     "paths": {
+      "*": ["node_modules/*"],
       "@/*": ["./src/*"]
     }
   },
-  "include": ["./**/*.d.ts", "./**/*.ts", "./**/*.tsx"]
+  "include": ["src/**/*", "./**/*.d.ts", "./**/*.ts", "./**/*.tsx"]
 }
