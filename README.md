@@ -3,11 +3,6 @@
 - 现在市面上开源免费好用的 Shell 工具要不停更了,要不未完全开源.导致我一直没找到合适的工具.
 - HuTaoShell 希望能开发出一款好用的 SSH 管理工具,项目使用 Electron Forge 从 0 构建.
 - 先打好架子,希望有大佬能一起来用爱发电,毕竟是从 0 开始学,一点一点的开发.Electron 和类似的 SSH 工具都没搞过,也不知道原理.
-- React 18.x
-- Electron 24.x
-- TypeScript 5.x
-- Webpack 5.x
-- Ant Design 5.x
 
 ## 初步计划
 

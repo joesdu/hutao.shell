@@ -3,7 +3,7 @@
   "version": "1.0.0-alpha",
   "license": "MIT",
   "author": {
-    "name": "Joes",
+    "name": "joes_du",
     "email": "dygood@outlook.com"
   },
   "main": ".webpack/main",
@@ -15,7 +15,10 @@
     "start": "electron-forge start"
   },
   "dependencies": {
+    "@ant-design/icons": "^5.0.1",
     "antd": "^5.4.0",
+    "classnames": "^2.3.2",
+    "dayjs": "^1.11.7",
     "electron-squirrel-startup": "^1.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -40,7 +43,6 @@
     "eslint": "^8.37.0",
     "eslint-plugin-import": "^2.27.5",
     "fork-ts-checker-webpack-plugin": "^8.0.0",
-    "husky": "^8.0.3",
     "less": "^4.1.3",
     "less-loader": "^11.1.0",
     "node-loader": "^2.0.0",

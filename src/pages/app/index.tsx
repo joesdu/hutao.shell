@@ -23,12 +23,9 @@ function App() {
         <a className="App-link" href="https://www.electronforge.io/" target="_blank" rel="noopener noreferrer">
           Learn Electron Forge
         </a>
-        <p>
-          我们也用到了
-          <a className="App-link" href="https://webpack.docschina.org/concepts" target="_blank">
-            WebPack 5
-          </a>
-        </p>
+        <a className="App-link" href="https://webpack.docschina.org/concepts" target="_blank">
+          Learn WebPack 5
+        </a>
       </header>
     </div>
   );
