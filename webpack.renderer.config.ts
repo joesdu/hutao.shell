@@ -4,18 +4,8 @@ import { plugins } from './webpack.plugins';
 import { rules } from './webpack.rules';
 
 rules.push({
-  test: /\.less$/,
+  test: /\.(less|css)$/,
   use: [{ loader: 'style-loader' }, { loader: 'css-loader' }, { loader: 'less-loader' }]
-});
-
-rules.push({
-  test: /\.(png|svg|jpg|jpeg|gif)$/i,
-  type: 'asset/resource'
-});
-
-rules.push({
-  test: /\.txt/,
-  type: 'asset/source'
 });
 
 export const rendererConfig: Configuration = {
@@ -31,6 +21,6 @@ export const rendererConfig: Configuration = {
     alias: {
       '@': path.resolve(__dirname, 'src/')
     },
-    extensions: ['.js', '.ts', '.jsx', '.tsx', '.less']
+    extensions: ['.js', '.ts', '.jsx', '.tsx', '.css', '.less']
   }
 };

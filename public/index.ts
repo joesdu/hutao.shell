@@ -1,4 +1,6 @@
-import { app, BrowserWindow } from 'electron';
+import { BrowserWindow, app } from 'electron';
+
+import icon from './images/icon.png';
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) {
@@ -10,6 +12,7 @@ const createWindow = (): void => {
   const mainWindow = new BrowserWindow({
     width: 1920,
     height: 1080,
+    icon,
     webPreferences: {
       preload: MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY
     }
