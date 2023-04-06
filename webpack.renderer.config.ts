@@ -4,7 +4,7 @@ import { plugins } from './webpack.plugins';
 import { rules } from './webpack.rules';
 
 rules.push({
-  test: /\.(less|css)$/,
+  test: /\.(css)$/,
   use: [{ loader: 'style-loader' }, { loader: 'css-loader' }]
 });
 
@@ -21,6 +21,6 @@ export const rendererConfig: Configuration = {
     alias: {
       '@': path.resolve(__dirname, 'src/')
     },
-    extensions: ['.js', '.ts', '.jsx', '.tsx', '.css', '.less']
+    extensions: ['.js', '.ts', '.jsx', '.tsx', '.css']
   }
 };

@@ -3,13 +3,13 @@ import { useEmotionCss } from '@ant-design/use-emotion-css';
 import logo from '@/asset/logo.svg';
 
 export const Home = () => {
-  const app = useEmotionCss(({ token }) => {
+  const app = useEmotionCss(() => {
     return {
       textAlign: 'center'
     };
   });
 
-  const appHeader = useEmotionCss(({ token }) => {
+  const appHeader = useEmotionCss(() => {
     return {
       backgroundColor: '#282c34',
       minHeight: '100vh',
@@ -22,26 +22,19 @@ export const Home = () => {
     };
   });
 
-  const appLogo = useEmotionCss(({ token }) => {
+  const appLogo = useEmotionCss(() => {
     return {
       height: '40vmin',
       pointerEvents: 'none',
       '@keyframes spin': {
-        from: {
-          transform: 'rotate(0deg)'
-        },
-        to: {
-          transform: 'rotate(360deg)'
-        }
+        from: { transform: 'rotate(0deg)' },
+        to: { transform: 'rotate(360deg)' }
       },
-      animationName: 'spin',
-      animationDuration: '20s',
-      animationTimingFunction: 'linear',
-      animationIterationCount: 'infinite'
+      animation: 'spin infinite 20s linear'
     };
   });
 
-  const appLink = useEmotionCss(({ token }) => {
+  const appLink = useEmotionCss(() => {
     return {
       color: '#61dafb'
     };
