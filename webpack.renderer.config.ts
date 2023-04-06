@@ -5,7 +5,7 @@ import { rules } from './webpack.rules';
 
 rules.push({
   test: /\.(less|css)$/,
-  use: [{ loader: 'style-loader' }, { loader: 'css-loader' }, { loader: 'less-loader' }]
+  use: [{ loader: 'style-loader' }, { loader: 'css-loader' }]
 });
 
 export const rendererConfig: Configuration = {
