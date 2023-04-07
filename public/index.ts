@@ -1,7 +1,7 @@
 import { BrowserWindow, Menu, app } from 'electron';
-import { menu } from './menu';
 
 import icon from './images/icon.png';
+import { menu } from './menu';
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) {

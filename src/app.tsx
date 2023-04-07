@@ -1,5 +1,6 @@
-import { Home } from '@/pages/home';
 import { ConfigProvider, theme } from 'antd';
+
+import { Home } from '@/pages/home';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 

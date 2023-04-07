@@ -1,5 +1,5 @@
 module.exports = {
-  extends: [require.resolve('@umijs/fabric/dist/eslint'), 'eslint:recommended', 'plugin:@typescript-eslint/eslint-recommended', 'plugin:@typescript-eslint/recommended', 'plugin:import/recommended', 'plugin:import/electron', 'plugin:import/typescript'],
+  extends: [require.resolve('@umijs/fabric/dist/eslint')],
   globals: {
     page: true
   },
