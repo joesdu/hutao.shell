@@ -33,7 +33,7 @@ const createWindow = (): void => {
     height: 1080,
     backgroundColor: '#282c34',
     icon,
-    title: 'HoTaoShell',
+    title: 'HuTao',
     webPreferences: {
       preload: MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY
     },

@@ -1,4 +1,4 @@
-# HuTao.Shell
+# hutao.shell
 
 - 现在市面上开源免费好用的 Shell 工具要不停更了,要不未完全开源.导致我一直没找到合适的工具.
 - HuTaoShell 希望能开发出一款好用的 SSH 管理工具,项目使用 Electron Forge 从 0 构建.

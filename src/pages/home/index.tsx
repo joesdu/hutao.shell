@@ -1,5 +1,6 @@
 import logo from '@/asset/logo.svg';
 import { useEmotionCss } from '@ant-design/use-emotion-css';
+import { Helmet } from 'react-helmet-async';
 
 export const Home = () => {
   const app = useEmotionCss(() => {
