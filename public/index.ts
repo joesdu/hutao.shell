@@ -1,21 +1,44 @@
-import { BrowserWindow, app } from 'electron';
+import { BrowserWindow, Menu, app } from 'electron';
 
 import icon from './images/icon.png';
+import { menu } from './menu';
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) {
   app.quit();
 }
 
+// Disable default menu (https://github.com/electron/electron/issues/35512)
+Menu.setApplicationMenu(null);
+
+if (process.platform === 'darwin') {
+  menu.unshift({
+    label: app.getName(),
+    submenu: [
+      {
+        label: '退出',
+        accelerator: 'CmdOrCtrl+Q',
+        click: () => app.quit()
+      }
+    ]
+  });
+}
+const appMenu = Menu.buildFromTemplate(menu);
+Menu.setApplicationMenu(appMenu);
+
 const createWindow = (): void => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
     width: 1920,
     height: 1080,
+    backgroundColor: '#282c34',
     icon,
+    title: 'HoTaoShell',
     webPreferences: {
       preload: MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY
-    }
+    },
+    // 是否隐藏默认的标题栏,后期为了好看,需要自己自己写
+    frame: true
   });
 
   // and load the index.html of the app.

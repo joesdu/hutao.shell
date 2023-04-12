@@ -45,3 +45,19 @@ yarn plugin import interactive-tools
 # 更新 yarn TypeScript 库自动加入插件
 yarn plugin import typescript
 ```
+
+**如果在 Windows 平台上出现如下错误**
+
+```text
+An unhandled exception has occurred inside Forge:
+listen EACCES: permission denied 0.0.0.0:3000
+Error: listen EACCES: permission denied 0.0.0.0:3000
+```
+
+- 请执行如下命令:
+- 用管理员身份打开命令行或者 powershell
+
+```shell
+net stop winnat
+net start winnat
+```
